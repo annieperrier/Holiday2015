@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Holiday snow ball toss">
+	<meta name="author" content="Tech Talk">
+
+	<link rel="icon" type="image/png" href="img/logo-letter-64.png">
+
+	<title>Holiday Snowball Toss</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<h1>
+			<img src="img/logo-142.png"/>
+			Holiday
+			Snowball Toss
+		</h1>
+	</header>
+
+	<div id="loading">
+		<h1>Loading...</h1>
+	</div>
+
+	<div id="viewport-container" style="display: none">
+		<div id="viewport">
+			<div class="scene">
+				<img id="background" class="svgimg" src="svg/background.svg"/>
+				<img id="beam" class="svgimg" src="svg/beam.svg"/>
+				<img id="spaceship" class="svgimg" src="svg/spaceship.svg"/>
+				<img id="snowball" class="svgimg" src="svg/snowball.svg"/>
+				<img id="scully" class="svgimg" src="svg/scully.svg"/>
+				<img id="mulder" class="svgimg" src="svg/mulder.svg"/>
+			</div>
+		</div>
+	</div>
+	<div id="btn-container" style="display: none">
+		<button class="btn-primary" id="btn-reset" onclick="reset()">Reset</button>
+		<button class="btn-primary" id="btn-run" onclick="run()">Play</button>
+	</div>
+
+	<footer>
+		&copy; Hostopia Tech Talk 2015
+	</footer>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
